@@ -28,4 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeButton) {
         closeButton.addEventListener('click', toggleMenu);
     }
+
+    const toggleChevron = document.querySelector('.toggle-chevron');
+
+    if (toggleChevron) {
+        toggleChevron.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const userTicketWrapper = document.querySelector('.user-ticket-wrapper');
+            userTicketWrapper.classList.toggle('collapsed');
+        });
+    }
 });
