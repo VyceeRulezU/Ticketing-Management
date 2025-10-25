@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management</title>
+    <!-- Logo in Tab -->
+    <link rel="icon" type="image/svg+xml" href="./images/logo-icon.svg">
+    <link rel="stylesheet" href="service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="body-wrapper">
+
+        <div class="nav-bar">
+
+            <div class="logo-button">
+                <a class="home" href="./index.html">
+                    <div class="logo">
+                        <img src="images/bloomify-logo.svg" alt="Bloomify Logo">
+                    </div>
+                </a>
+
+                <div class="expbtn">
+                    <img src="./images/Expand.svg" alt="Expand Btn">
+                </div>
+            </div>
+
+            <div class="navlinks">
+                
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">chart_data</span>
+                    <p>Analytics</p>
+                </div>
+
+                <a class="page-anchor" href="#">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">docs</span>
+                        <p>Order</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="#">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <p>Cart</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="#">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">team_dashboard</span>
+                        <p>Invoice</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="title-bar">
+                <div class="title-container">
+                    <p class="page-heading">Support Management</p>
+                    <p class="page-sum">Keep track of customers enquiries.</p>
+                </div>
+
+                <div class="profile-container">
+                    <a class="not-link" href="./service.html">
+                        <div class="notification">
+                            <img src="./images/Icon Frame.svg" alt="notification">
+                        </div>
+                    </a>
+
+                    <div class="profile-pic">
+                        <img src="images/animoji.svg" alt="Profile Picture">
+                    </div>
+                </div>
+
+                <div class="menu-button">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">chart_data</span>
+                    <p>Analytics</p>
+                </div>
+
+                <a class="page-anchor" href="./order.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">docs</span>
+                        <p>Order</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./cart.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <p>Cart</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./invoice.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">team_dashboard</span>
+                        <p>Invoice</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="tab active-tab">
+                    <p>Ticket</p>
+                </div>
+
+                <div class="tab">
+                    <p>Customers</p>
+                </div>
+                
+                <div class="tab">
+                    <p>Reports</p>
+                </div>
+
+            </div>
+
+            <div class="ticket-message-container">
+
+                <div class="ticket-container">
+                    
+                    <div class="header-container">
+                        <p class="header">Ticket</p>
+                        <p class="msg-counter">12</p>
+                    </div>
+
+                    <form class="search-container">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                        <input type="search" name="search" id="search" class="search" placeholder="Search for Orders, Customers...">
+                    </form>
+
+                    <div class="filter-container">
+                        <div class="filter-btn">
+                            <p>All Status</p>
+                            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                        </div>
+
+                        <div class="filter-btn">
+                            <p>All Priority</p>
+                            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                        </div>
+                    </div>
+
+                    <div class="user-ticket-wrapper">
+
+                        <div class="ticket-message active-msg">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip active-chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip active-chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-message">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="msg-container">
+                                <div class="msg-header">
+                                    <div class="user-info">
+                                        <p class="user-name">Sarah Chen</p>
+                                        <p class="user-msg">Unable to access dashboard after recent...</p>
+                                    </div>
+
+                                    <div class="msg-time">
+                                        <p>2m ago</p>
+                                    </div>
+                                </div>
+
+                                <div class="msg-body">
+                                    <p>I've tried clearing my cache but still can't log in. Getting a 403 error.</p>
+                                </div>
+
+                                <div class="detail-container">
+                                    <div class="detail-container-left">
+                                        <div class="chip">
+                                            <p>High</p>
+                                        </div>
+
+                                        <div class="chip">
+                                            <p>Open</p>
+                                        </div>
+
+                                        <p>#TKT-1247</p>
+                                    </div>
+
+                                    <div class="msg-counter">
+                                        <span class="material-symbols-outlined">chat_bubble</span>
+                                        <p>3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="msg-wrapper">
+
+                    <div class="header-chip">
+                        <div class="header-top">
+                            <p>Unable to access dashboard after recent update</p>
+                            <span class="material-symbols-outlined">more_horiz</span>
+                        </div>
+
+                        <div class="header-chip-wrapper">
+                            <p>Sarah Chen</p>
+
+                            <img src="./images/Line 2.png" alt="divider">
+
+                            <div class="chip">
+                                <p>High</p>
+                            </div>
+
+                            <div class="chip">
+                                <p>Open</p>
+                            </div>
+
+                            <p>#TKT-1247</p>
+                        </div>
+                    </div>
+
+                    <div class="assigned-update">
+                        <div class="assigned">
+                            <span class="material-symbols-outlined assigned-icon">person</span>
+                            <p class="assign-text">Assigned:</p>
+                            <div class="filter-btn">
+                                <p>You</p>
+                                <span class="material-symbols-outlined ">keyboard_arrow_down</span>
+                            </div>
+                        </div>
+
+                        <div class="assigned">
+                            <span class="material-symbols-outlined assigned-icon">timer</span>
+                            <p>Last Updated: <span class="2m">2m ago</span></p>
+                        </div>
+                    </div>
+
+                    <div class="msg-area">
+
+                        <div class="user-chat">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="chat-body">
+                                <div class="name-time">
+                                    <p class="user-name">Sarah Chen</p>
+                                    <p class="chat-time">2m ago</p>
+                                </div>
+                                <p class="chat-msg">Hi, I'm having trouble accessing my dashboard after the update. Everytime I try to log in, I get a 403 error.</p>
+                            </div>
+                        </div>
+
+                        <div class="admin-chat">
+                            <div class="chat-body">
+                                <div class="name-time-admin">
+                                    <p class="user-name">Admin</p>
+                                    <p class="chat-time">2m ago</p>
+                                </div>
+                                <p class="chat-msg">Thanks for the update — and for sharing your account details. I checked your profile, and it seems your user role was affected by a recent permissions update on our end. I’ve restored your dashboard access and confirmed your credentials are now active.</p>
+                            </div>
+
+                            <div class="avatar">
+                                <img src="./images/Admin-animoji.svg" alt="avatar">
+                            </div>
+                        </div>
+
+                        <div class="user-chat">
+                            <div class="avatar">
+                                <img src="./images/animoji.svg" alt="avatar">
+                            </div>
+
+                            <div class="chat-body">
+                                <div class="name-time">
+                                    <p class="user-name">Sarah Chen</p>
+                                    <p class="chat-time">2m ago</p>
+                                </div>
+                                <p class="chat-msg">Hi, I'm having trouble accessing my dashboard after the update. Everytime I try to log in, I get a 403 error.</p>
+                            </div>
+                        </div>
+
+                        <div class="admin-chat">
+                            <div class="chat-body">
+                                <div class="name-time-admin">
+                                    <p class="user-name">Admin</p>
+                                    <p class="chat-time">2m ago</p>
+                                </div>
+                                <p class="chat-msg">Please log out completely, refresh the page, and try signing in again. You should be able to access your dashboard without any issue. If you still experience the 403 error, let me know right away — I’ll escalate it to our backend team for deeper investigation.</p>
+                            </div>
+
+                            <div class="avatar">
+                                <img src="./images/Admin-animoji.svg" alt="avatar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-area">
+                        <form class="chat-form">
+                            <textarea id="message" class="message" name="message" rows="4" cols="20" placeholder="Enter your message here..."></textarea>
+
+                            <div class="button-wrapper">
+                                <div class="attach-link">
+                                    <span class="material-symbols-outlined assigned-icon">attach_file</span>
+                                    <p>Attach File</p>
+                                </div>
+
+                                <div class="send-reply">
+                                    <div class="filter-btn">
+                                        <p>Reply</p>
+                                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                                    </div>
+
+                                    <button type="submit" class="send">
+                                        Send
+                                        <span class="material-symbols-outlined">send</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        menuButton.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
