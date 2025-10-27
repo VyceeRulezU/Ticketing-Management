@@ -1419,6 +1419,7 @@
     .msg-wrapper {
         width: 100%;
         padding: 1rem;
+        border: solid 1px #D8D8D8;
     }
 
     .header-top p {
