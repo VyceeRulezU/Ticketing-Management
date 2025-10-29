@@ -155,15 +155,45 @@
                     </form>
 
                     <div class="filter-container">
-                        <div class="filter-btn">
-                            <p>All Status</p>
-                            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+
+                        <div class="dd-filter-btn ">
+                            <!-- <label for="role" class="filter-label">Payment Status</label> -->
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>All Status</option>
+                                <option value="student">Open</option>
+                                <option value="teacher">Ongoing</option>
+                                <option value="parent">Pending</option>
+                                <option value="other" class="canceled">Overdue</option>
+                            </select>
+                            <span class="material-symbols-outlined filter-chevron">keyboard_arrow_down</span>
                         </div>
 
-                        <div class="filter-btn">
+
+                         <div class="dd-filter-btn ">
+                            <!-- <label for="role" class="filter-label">Payment Status</label> -->
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>All Priority</option>
+                                <option value="student">Low</option>
+                                <option value="teacher">Medium</option>
+                                <option value="parent">High</option>
+                                <option value="other" class="canceled">Urgent</option>
+                            </select>
+                            <span class="material-symbols-outlined filter-chevron">keyboard_arrow_down</span>
+                        </div>
+
+
+                        <!-- <div class="filter-btn">
+                            <p>All Status</p>
+                            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                        </div> -->
+
+
+
+                        <!-- <div class="filter-btn">
                             <p>All Priority</p>
                             <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                        </div>
+                        </div> -->
+
                     </div>
 
                     <div class="user-ticket-wrapper collapsed">
@@ -664,13 +694,29 @@
                     </div>
 
                     <div class="assigned-update">
+
                         <div class="assigned">
+                            
                             <span class="material-symbols-outlined assigned-icon">person</span>
                             <p class="assign-text">Assigned:</p>
-                            <div class="filter-btn">
+
+                            <div class="dd-filter-btn assignee">
+                                <!-- <label for="role" class="filter-label">Payment Status</label> -->
+                                <select id="role" name="role" required>
+                                    <option value="" disabled selected>Select Assignee</option>
+                                    <option value="student">You</option>
+                                    <option value="teacher">Adma Lambert</option>
+                                    <option value="parent">Uzoma nwabueze</option>
+                                    <option value="other">Dami Agbaje</option>
+                                </select>
+                                <span class="material-symbols-outlined filter-chevron">keyboard_arrow_down</span>
+                            </div>
+
+                            <!-- <div class="filter-btn">
                                 <p>You</p>
                                 <span class="material-symbols-outlined ">keyboard_arrow_down</span>
-                            </div>
+                            </div> -->
+
                         </div>
 
                         <div class="assigned">
