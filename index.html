@@ -83,7 +83,7 @@
                     </a>
 
                     <div class="profile-pic">
-                        <img src="images/animoji.svg" alt="Profile Picture">
+                        <img src="images/Admin-animoji.svg" alt="Profile Picture">
                     </div>
                 </div>
 
@@ -696,7 +696,7 @@
                     <div class="assigned-update">
 
                         <div class="assigned">
-                            
+
                             <span class="material-symbols-outlined assigned-icon">person</span>
                             <p class="assign-text">Assigned:</p>
 
@@ -795,15 +795,29 @@
                                 </div>
 
                                 <div class="send-reply">
-                                    <div class="filter-btn">
+
+                                    <div class="dd-filter-btn assignee">
+                                        <!-- <label for="role" class="filter-label">Payment Status</label> -->
+                                        <select id="role" name="role" required>
+                                            <option value="" disabled selected>Reply by Assignee</option>
+                                            <option value="student">You</option>
+                                            <option value="teacher">Adma Lambert</option>
+                                            <option value="parent">Uzoma Nwabueze</option>
+                                            <option value="other">Dami Agbaje</option>
+                                        </select>
+                                        <span class="material-symbols-outlined filter-chevron">keyboard_arrow_down</span>
+                                    </div>
+
+                                    <!-- <div class="filter-btn">
                                         <p>Reply</p>
                                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                                    </div>
+                                    </div> -->
 
                                     <button type="submit" class="send">
                                         Send
                                         <span class="material-symbols-outlined">send</span>
                                     </button>
+                                    
                                 </div>
                             </div>
                         </form>
